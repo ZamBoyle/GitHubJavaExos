@@ -11,15 +11,16 @@ public class Together {
 		System.out.println("Bonjour " + playerName + " !\n");
 		String continueCalc = "oui";
 
-		while (continueCalc.equals("oui")) {
+		while (continueCalc.equals("oui")) {//Tant que continueCalc est égal à "oui" on exécute le bloc d'instructions comprises entre les deux accolades
 			Menu.AfficheMenu();
 			int choix = Input.AskInt("Quel est ton choix ?");
 			while (choix < 1 || choix > 5) {
 				choix = Input.AskInt("Quel est ton choix ?");
 			}
 
-			// Définir une variable number1 de type float qui utilisera Input.askFloat et le
+			// Définir une variable number1 de type float dont la valeur sera à égal au résultat de Input.askFloat et le
 			// texte "Entrez un nombre:"
+			// Exemple: float numberToEat = Input.AskFloat("Donne-moi un nombre à manger:");
 			if (choix == 5) {
 				// Inspirez-vous du choix == 1 pour faire cette partie
 			} else {
@@ -41,7 +42,7 @@ public class Together {
 				}
 			}
 
-			continueCalc = Input.AskStr("On continue de calculer ?");
+			continueCalc = Input.AskStr("On continue de calculer ?");//La réponse est importante. Elle déterminera si le while continue grâce à la valeur de continueCalc
 		}
 	}
 }
