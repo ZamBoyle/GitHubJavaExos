@@ -14,4 +14,16 @@ Ce programme devra demander:
 
 Lors du choix de l'opération arithmétique, le programme affichera le résultat de l'opération choisie.
 
+- Mettez-vous dans le répertoire "mesdépos" ou "mesrepos"
+- Clônez le dépôt avec la commande gh suivante:
+    ```bash
+    gh repo clone https://github.com/zamboyle/GitHubJavaExos
+    ```
+
+N'oubliez pas l'ordre des opérations avec GitHub:
+- Recevez les modifications des autres avec la commande git pull
+- Modifiez votre code.
+- Ajoutez le/les fichiers dans la zone d'index avec la commande git add
+- Commitez vos modifications avec la commande git commit
+- Poussez vos modifications sur GitHub avec la commande git push
 
