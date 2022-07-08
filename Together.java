@@ -43,6 +43,7 @@ public class Together {
 			}
 
 			continueCalc = Input.AskStr("On continue de calculer ?");//La réponse est importante. Elle déterminera si le while continue grâce à la valeur de continueCalc
+			//Salut
 		}
 	}
 }
