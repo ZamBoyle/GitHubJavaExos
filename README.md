@@ -10,7 +10,7 @@ Structure du programme:
 - util.UserInput: contient des méthodes statiques pour demander à l'utilisateur d'enter des string, int, float.
 
 Ce programme devra demander:
-- l'identité de l'utilisation et son age.
+- l'identité de l'utilisateur et son age.
 - Saluer l'utilisateur.
 - Afficher un menu d'opération arithémtiques
 - Un nombre s'il veut calculer un nombre au carré.
