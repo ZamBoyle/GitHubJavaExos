@@ -2,8 +2,10 @@ package util;
 
 import java.util.Scanner;
 
-public class Input {
-    static enum AnswerType {
+public class UserInput {
+    public static  Scanner scanner = new Scanner(System.in);
+
+    public static enum AnswerType {
         STRING,
         INT,
         FLOAT
@@ -22,16 +24,23 @@ public class Input {
     }
 
     private static Object AskSomething(String question, AnswerType answerType) {
-        Scanner scanner = new Scanner(System.in);
         System.out.print(question);
         Object answer = null;
 
-        if (answerType.equals(AnswerType.STRING)) {
-            answer = scanner.nextLine();
-        } else if (answerType.equals(AnswerType.INT)) {
-            answer = scanner.nextInt();
-        } else if (answerType.equals(AnswerType.FLOAT)) {
-            answer = scanner.nextFloat();
+        switch (answerType) {
+            case STRING :
+                answer = scanner.nextLine();    
+                break;
+            case INT:
+                answer = scanner.nextInt();
+                scanner.nextLine();
+                break;
+            case FLOAT:
+                answer = scanner.nextFloat();
+                scanner.nextLine();            
+                break;
+            default:
+                break;
         }
         return answer;
     }
