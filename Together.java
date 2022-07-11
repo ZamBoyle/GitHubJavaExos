@@ -29,25 +29,25 @@ public class Together {
 				// Définir une variable number2 de type float qui utilisera Input.askFloat et le
 				// texte "Entrez un second nombre"
 
-				if (choix == 1) {
+				if (choix == 1) { // Addition
 					System.out.println(number1 + " + " + number2 + " = " + Maths.add(number1, number2));
 				}
-				if (choix == 2) {
+				if (choix == 2) { // Soustraction
 					// Inspirez-vous du choix == 1 pour faire cette partie
 				}
-				if (choix == 3) {
+				if (choix == 3) { // Multiplication
 					// Inspirez-vous du choix == 1 pour faire cette partie
 				}
-				if (choix == 4) {
+				if (choix == 4) { // Division
 					// Inspirez-vous du choix == 1 pour faire cette partie
 					// Attention si number2 vaut 0 ! Soit vous affichez un message indiquant qu'on
 					// ne peut pas diviser par zéro et le menu des opérations s'affiche. Soit si
 					// vous êtes motivés et vous jouez avec un while.
 				}
 			}
-			continueCalc = UserInput.AskStr("On continue de calculer ?");// La réponse est importante. Elle déterminera
-																			// si le while continue grâce à la valeur de
-																			// continueCalc
+			// La réponse est importante. Elle déterminera
+			// si le while continue grâce à la valeur de continueCalc
+			continueCalc = UserInput.AskStr("On continue de calculer ?");
 		}
 	}
 }
