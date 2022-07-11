@@ -9,7 +9,7 @@ public class Together {
 
 		String playerName = Identity.GetName();
 		int playerAge = Identity.GetAge();
-		System.out.println("Bonjour " + playerName + " ! Wow, " + playerAge + " ans tu n'es plus tout jeune !\n");
+		System.out.println("Bonjour " + playerName + " ! Wow ! " + playerAge + " ans ! Tu n'es plus tout jeune !\n");
 		String continueCalc = "oui";
 
 		while (continueCalc.equals("oui")) {// Tant que continueCalc est égal à "oui" on exécute le bloc d'instructions
@@ -20,14 +20,13 @@ public class Together {
 				choix = UserInput.AskInt("Quel est ton choix ?");
 			}
 
-			// Définir une variable number1 de type float dont la valeur sera à égal au
-			// résultat de Input.askFloat et le
-			// texte "Entrez un nombre:"
+			// Définir une variable number1 de type float dont la valeur sera égal au
+			// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera "Entrez un nombre:"
 			if (choix == 5) {
 				// Inspirez-vous du choix == 1 pour faire cette partie
 			} else {
-				// Définir une variable number2 de type float qui utilisera Input.askFloat et le
-				// texte "Entrez un second nombre"
+				// Définir une variable number2 de type float dont la valeur sera égal au
+				// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera "Entrez un second nombre"
 
 				if (choix == 1) { // Addition
 					System.out.println(number1 + " + " + number2 + " = " + Maths.add(number1, number2));
