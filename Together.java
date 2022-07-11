@@ -1,7 +1,10 @@
-import util.Identity;
-import util.UserInput;
-import util.Maths;
-import util.Menu;
+import util.*;
+//utiliser import util.* est un raccourcis pour éviter de devoir taper tous les imports suivants:
+//import util.Identity;
+//import util.UserInput;
+//import util.Maths;
+//import util.Menu;
+
 
 public class Together {
 
