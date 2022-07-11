@@ -2,9 +2,11 @@ package util;
 public class Identity {
 
     public static String GetName() {
-        return ""; //A compléter en appelant Input.AskStr
+        //A compléter en appelant Input.AskStr
+        return ""; 
     }
     public static int GetAge(){
-        return 10000; //A  compléter en appelant Input.AskInt
+        //A  compléter en appelant Input.AskInt
+        return 10000; 
     }
 }
