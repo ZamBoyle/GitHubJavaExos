@@ -2,12 +2,11 @@ package util;
 public class Identity {
 
     public static String GetName() {
-        //A compléter en appelant Input.AskStr
-        String name = "";
+        String name = Input.AskStr("Quel est votre nom ?");
         return name;
     }
     public static int GetAge(){
-        //A  compléter en appelant Input.AskInt
-        return 10000; 
+        Int age = Input.AskInt("Quel est votre âge ?");
+        return age; 
     }
 }
