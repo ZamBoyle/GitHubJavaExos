@@ -5,7 +5,6 @@ import util.*;
 //import util.Maths;
 //import util.Menu;
 
-
 public class Together {
 
 	public static void main(String[] args) {
@@ -24,24 +23,46 @@ public class Together {
 			}
 
 			// Définir une variable number1 de type float dont la valeur sera égal au
-			// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera "Entrez un nombre:"
+			// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera
+			// "Entrez un nombre:"
+
+			float number1 = UserInput.AskFloat("Entrez un nombre:");
+
 			if (choix == 5) {
 				// Inspirez-vous du choix == 1 pour faire cette partie
+				System.out.println(number1 + "² = " + Maths.squarre(number1));
+
 			} else {
 				// Définir une variable number2 de type float dont la valeur sera égal au
-				// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera "Entrez un second nombre"
+				// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera
+				// "Entrez un second nombre"
+
+				float number2 = UserInput.AskFloat("Entrez un second nombre :");
 
 				if (choix == 1) { // Addition
 					System.out.println(number1 + " + " + number2 + " = " + Maths.add(number1, number2));
 				}
 				if (choix == 2) { // Soustraction
-					// Inspirez-vous du choix == 1 pour faire cette partie
+					System.out.println(number1 + " - " + number2 + " = " + Maths.substract(number1, number2));
 				}
 				if (choix == 3) { // Multiplication
-					// Inspirez-vous du choix == 1 pour faire cette partie
+					System.out.println(number1 + " * " + number2 + " = " + Maths.multiply(number1, number2));
 				}
 				if (choix == 4) { // Division
-					// Inspirez-vous du choix == 1 pour faire cette partie
+
+					// if (number2 == 0) {
+					// System.out.println("Erreur : division par 0 impossible");
+					// Menu.AfficheMenu();
+					// } else {
+					// System.out.println(number1 + " * " + number2 + " = " + Maths.divide(number1,
+					// number2));
+					// }
+
+					while (number2 == 0) {
+						System.out.println("Erreur : division par 0 impossible");
+						number2 = UserInput.AskFloat("Entrez un second nombre :");
+					}
+
 					// Attention si number2 vaut 0 ! Soit vous affichez un message indiquant qu'on
 					// ne peut pas diviser par zéro et le menu des opérations s'affiche. Soit si
 					// vous êtes motivés et vous jouez avec un while.
