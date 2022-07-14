@@ -30,7 +30,7 @@ public class Together {
 
 			if (choix == 5) {
 				// Inspirez-vous du choix == 1 pour faire cette partie
-				System.out.println(number1 + "² = " + Maths.squarre(number1));
+				System.out.println(number1 + "² = " + Maths.square(number1));
 
 			} else {
 				// Définir une variable number2 de type float dont la valeur sera égal au
@@ -50,18 +50,11 @@ public class Together {
 				}
 				if (choix == 4) { // Division
 
-					// if (number2 == 0) {
-					// System.out.println("Erreur : division par 0 impossible");
-					// Menu.AfficheMenu();
-					// } else {
-					// System.out.println(number1 + " * " + number2 + " = " + Maths.divide(number1,
-					// number2));
-					// }
-
 					while (number2 == 0) {
 						System.out.println("Erreur : division par 0 impossible");
 						number2 = UserInput.AskFloat("Entrez un second nombre :");
 					}
+					System.out.println(number1 + " / " + number2 + " = " + Maths.divide(number1, number2));
 
 					// Attention si number2 vaut 0 ! Soit vous affichez un message indiquant qu'on
 					// ne peut pas diviser par zéro et le menu des opérations s'affiche. Soit si
