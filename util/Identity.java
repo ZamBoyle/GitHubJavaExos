@@ -2,8 +2,8 @@ package util;
 public class Identity {
 
     public static String GetName() {
-        //A compléter en appelant Input.AskStr
-        return ""; 
+        String name = UserInput.AskStr("Comment t'appelles-tu ?");
+        return name;
     }
     public static int GetAge(){
         //A  compléter en appelant Input.AskInt
