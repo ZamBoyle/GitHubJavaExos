@@ -2,6 +2,7 @@ package util;
 public class Identity {
 
     public static String GetName() {
+        //A compléter en appelant Input.AskStr
         String name = "";
         return name;
     }
