@@ -2,7 +2,7 @@ package util;
 public class Identity {
 
     public static String GetName() {
-        String name = UserInput.AskStr("Comment t'appelles-tu ?");
+        String name = "";
         return name;
     }
     public static int GetAge(){
