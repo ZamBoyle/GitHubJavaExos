@@ -22,7 +22,9 @@ public class Together {
 				choix = UserInput.AskInt("Quel est ton choix ?");
 			}
 
-			// Définir une variable number1 de type float dont la valeur sera égal au résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera "Entrez un nombre:"
+			// Définir une variable number1 de type float dont la valeur sera égal au
+			// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera
+			// "Entrez un nombre:"
 
 			float number1 = UserInput.AskFloat("Entrez un nombre:");
 
@@ -31,20 +33,20 @@ public class Together {
 				System.out.println(number1 + "² = " + Maths.square(number1));
 
 			} else {
-				// Définir une variable number2 de type float dont la valeur sera égal au résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera "Entrez un second nombre"
+				// Définir une variable number2 de type float dont la valeur sera égal au
+				// résultat de Input.askFloat et dont le texte affiché à l'utilisateur sera
+				// "Entrez un second nombre"
 
 				float number2 = UserInput.AskFloat("Entrez un second nombre :");
 
 				if (choix == 1) { // Addition
 					System.out.println(number1 + " + " + number2 + " = " + Maths.add(number1, number2));
-				}
-				if (choix == 2) { // Soustraction
+				} else if (choix == 2) { // Soustraction
 					System.out.println(number1 + " - " + number2 + " = " + Maths.substract(number1, number2));
 				}
 				if (choix == 3) { // Multiplication
 					System.out.println(number1 + " * " + number2 + " = " + Maths.multiply(number1, number2));
-				}
-				if (choix == 4) { // Division
+				} else if (choix == 4) { // Division
 
 					while (number2 == 0) {
 						System.out.println("Erreur : division par 0 impossible");
@@ -52,11 +54,14 @@ public class Together {
 					}
 					System.out.println(number1 + " / " + number2 + " = " + Maths.divide(number1, number2));
 
-					// Attention si number2 vaut 0 ! Soit vous affichez un message indiquant qu'on ne peut pas diviser par zéro et le menu des opérations s'affiche. Soit si vous êtes motivés et vous jouez avec un while.
+					// Attention si number2 vaut 0 ! Soit vous affichez un message indiquant qu'on
+					// ne peut pas diviser par zéro et le menu des opérations s'affiche. Soit si
+					// vous êtes motivés et vous jouez avec un while.
 				}
 			}
-			// La réponse est importante. Elle déterminera si le while continue grâce à la valeur de continueCalc
-			
+			// La réponse est importante. Elle déterminera si le while continue grâce à la
+			// valeur de continueCalc
+
 			continueCalc = UserInput.AskStr("On continue de calculer ?");
 		}
 		UserInput.scanner.close();
