@@ -12,6 +12,10 @@ public class Maths {
         return number1 * number2;
     }
     public static float divide (float number1, float number2)  {
+        if(number2 == 0)
+        {
+            throw new exception('Division par zéro impossible !!');
+        }
         return number1 / number2;
     }
     public static float square  (float number1) {
