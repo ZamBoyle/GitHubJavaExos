@@ -13,7 +13,7 @@ class HelloWorld {
                         int somme = add(p1, p2);
                         System.out.println(p1 + "+" + p2 + "=" + somme);
                     } else {
-                        System.out.println("Il manque des paramètres");
+                        System.out.println("Il manque des paramètres pour effectuer l'addition");
                     }
                     break;
                 case "help":
@@ -37,6 +37,12 @@ class HelloWorld {
     }
 
     public static void help() {
-        System.out.println("Veuillez fournir en paramètre une des fonctions suivantes:");
+        System.out.println("AIDE DU PROGRAMME<br>");
+        System.out.println("<ul>");
+        System.out.println("<li>- hello() = affiche Hello World.</li>");
+        System.out.println("<li>- add(p1, p2) = affiche la somme de p1+p2</li>");
+        System.out.println("<li>- help() = affiche l'aide du programme</li>");
+        System.out.println("</ul>");
+
     }
 }
