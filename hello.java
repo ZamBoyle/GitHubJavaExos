@@ -31,7 +31,7 @@ class HelloWorld {
                     }
                     break;
                 case "salutation":
-                    if (args.length == 2) {
+                    if (args.length >= 2) {
                         String who = args[1];
                         salutation(who);
                     } else {
