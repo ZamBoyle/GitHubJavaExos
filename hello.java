@@ -30,6 +30,14 @@ class HelloWorld {
                         System.out.println("Il manque des parametres pour effectuer la table de multiplication");
                     }
                     break;
+                case "salutation":
+                    if (args.length == 2) {
+                        String who = args[1];
+                        salutation(who);
+                    } else {
+                        System.out.println("Il manque un paramètre pour saluer la personne");
+                    }
+                    break;
                 case "help":
                     help();
                     break;
@@ -44,6 +52,10 @@ class HelloWorld {
 
     public static void helloWorld() {
         System.out.println("Hello, World!");
+    }
+
+    public static void salutation(String who) {
+        System.out.println("Hello " + who + " !");
     }
 
     public static void bonjour(String prenom) {
@@ -67,6 +79,7 @@ class HelloWorld {
         System.out.println("<li>hello() = affiche Hello World.</li>");
         System.out.println("<li>add(p1, p2) = affiche la somme de p1+p2</li>");
         System.out.println("<li>help() = affiche l'aide du programme</li>");
+        System.out.println("<li>salutation(p1) = Salut p1</li>");
         System.out.println("<li>tableMultiplication (table, max) = table de multiplication de table jusqu'a max.</li>");
         System.out.println("</ul>");
     }
