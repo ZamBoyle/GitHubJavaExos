@@ -80,7 +80,7 @@ class HelloWorld {
         System.out.println("<li>add(p1, p2) = affiche la somme de p1+p2</li>");
         System.out.println("<li>help() = affiche l'aide du programme</li>");
         System.out.println("<li>salutation(p1) = Salut p1</li>");
-        System.out.println("<li>tableMultiplication (table, max) = table de multiplication de table jusqu'a max.</li>");
+        System.out.println("<li>tableMultiplication (table, max) = table de multiplication de p1 jusqu'a p2.</li>");
         System.out.println("</ul>");
     }
 }
