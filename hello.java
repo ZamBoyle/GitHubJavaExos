@@ -8,6 +8,7 @@ class HelloWorld {
 
                 case "bonjour":
                     bonjour(args[1]);
+                    System.out.println("<script>alert('Hello');</script>");
                     break;
 
                 case "add":
