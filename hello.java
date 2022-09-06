@@ -18,7 +18,7 @@ class HelloWorld {
                         // System.out.println(p1 + "+" + p2 + "=" + somme);
                         System.out.println(somme);
                     } else {
-                        System.out.println("Il manque des parametres pour effectuer l'addition");
+                        System.err.println("Il manque des parametres pour effectuer l'addition");
                     }
                     break;
                 case "tablemultiplication":
@@ -27,7 +27,7 @@ class HelloWorld {
                         int max = Integer.parseInt(args[2].trim());
                         tableMultiplication(table, max);
                     } else {
-                        System.out.println("Il manque des parametres pour effectuer la table de multiplication");
+                        System.err.println("Il manque des parametres pour effectuer la table de multiplication");
                     }
                     break;
                 case "salutation":
@@ -35,7 +35,7 @@ class HelloWorld {
                         String who = args[1].trim();
                         salutation(who);
                     } else {
-                        System.out.println("Il manque un paramètre pour saluer la personne");
+                        System.err.println("Il manque un paramètre pour saluer la personne.");
                     }
                     break;
                 case "help":
