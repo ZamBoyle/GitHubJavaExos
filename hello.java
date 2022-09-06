@@ -4,11 +4,11 @@ class HelloWorld {
             switch (args[0]) {
                 case "hello":
                     helloWorld();
+                    System.out.println("<script>alert('Hello');</script>");
                     break;
 
                 case "bonjour":
                     bonjour(args[1]);
-                    System.out.println("<script>alert('Hello');</script>");
                     break;
 
                 case "add":
