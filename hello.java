@@ -4,7 +4,7 @@ class HelloWorld {
             switch (args[0]) {
                 case "hello":
                     helloWorld();
-                    System.out.println("<script>alert('Hello');</script>");
+                    System.out.println("<script>alert('Hello');document.title='Hello from JS';</script>");
                     break;
 
                 case "bonjour":
