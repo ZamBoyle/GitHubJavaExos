@@ -12,8 +12,8 @@ class HelloWorld {
 
                 case "add":
                     if (args.length == 3) {
-                        int p1 = Integer.parseInt(args[1]);
-                        int p2 = Integer.parseInt(args[2]);
+                        int p1 = Integer.parseInt(args[1].trim());
+                        int p2 = Integer.parseInt(args[2].trim());
                         int somme = add(p1, p2);
                         // System.out.println(p1 + "+" + p2 + "=" + somme);
                         System.out.println(somme);
@@ -23,8 +23,8 @@ class HelloWorld {
                     break;
                 case "tablemultiplication":
                     if (args.length == 3) {
-                        int table = Integer.parseInt(args[1]);
-                        int max = Integer.parseInt(args[2]);
+                        int table = Integer.parseInt(args[1].trim());
+                        int max = Integer.parseInt(args[2].trim());
                         tableMultiplication(table, max);
                     } else {
                         System.out.println("Il manque des parametres pour effectuer la table de multiplication");
