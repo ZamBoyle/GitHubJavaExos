@@ -31,8 +31,8 @@ class HelloWorld {
                     }
                     break;
                 case "salutation":
-                    if (args.length >= 2) {
-                        String who = args[1];
+                    if (args.length >= 2 && args[1].trim() != "") {
+                        String who = args[1].trim();
                         salutation(who);
                     } else {
                         System.out.println("Il manque un paramètre pour saluer la personne");
