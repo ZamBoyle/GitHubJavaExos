@@ -42,6 +42,14 @@ class HelloWorld {
                 case "help":
                     help();
                     break;
+                case "david":
+                    if(args.length==2){
+                        david(args[1]);
+                    }
+                    else{
+                        System.err.println("La fonction david requière au moins 1 argument");
+                    }
+                    break;
                 default:
                     help();
                     break;
@@ -53,6 +61,10 @@ class HelloWorld {
 
     public static void helloWorld() {
         System.out.println("Hello, World!");
+    }
+
+    public static void david(String what){
+        System.out.println("David est "+what+".");
     }
 
     public static void salutation(String who) {
