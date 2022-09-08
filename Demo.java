@@ -1,4 +1,14 @@
 public class Demo {
+    // Les programmes JAVA que vous avez faits pour le moment ne demandait pas de paramètres pour être exécutés.
+    // Et vous les exécutez de la manière suivante: java programme.java
+    //
+    // Si vous aviez besoin d'une information de l'utilisateur, vous lui demandiez via un scanner.
+    //
+    // Cependant, votre programme pourrait ne pas être utilisé par un humain (script: automatisation de tâches).
+    // Il pourrait aussi être utilisé en tant qu'API que d'autres programmeurs pourrait utiliser.
+    // Et là, on passerait des variables en paramètres à votre programme au lancement de celui-ci.
+    //
+    //
     // String[] args signifie que args est un tableau de String: c'est à dire un tableau contenant différentes chaînes de caractères
     // Un tableau a une taille qui représente le nombre d'éléments.
     //
