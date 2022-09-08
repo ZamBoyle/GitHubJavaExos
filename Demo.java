@@ -1,5 +1,5 @@
 public class Demo {
-    // Les programmes JAVA que vous avez faits pour le moment ne demandait pas de paramètres pour être exécutés.
+    // Les programmes JAVA que vous avez faits pour le moment ne demandaient pas de paramètres pour être exécutés.
     // Et vous les exécutez de la manière suivante: java programme.java
     //
     // Si vous aviez besoin d'une information de l'utilisateur, vous lui demandiez via un scanner.
