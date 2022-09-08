@@ -3,8 +3,9 @@ public class demo {
         // On vérifie qu'on le tableau a bien reçu des paramètres: c'est à dire est-ce
         // que notre tableau à plus que zéro élément ?
         if (args.length > 0) {
+            help();
             // Est-ce que le premier paramètre, c'est à dire args[0] est la chaîne "help" ?
-            if (args[0] == "help") {
+            if (args[0].trim() == "help") {
                 help();
             }
 
