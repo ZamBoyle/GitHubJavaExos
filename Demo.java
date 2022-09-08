@@ -1,4 +1,16 @@
 public class Demo {
+    // String[] args signifie que args est un tableau de String: c'est à dire un tableau contenant différentes chaînes de caractères
+    // Un tableau a une taille qui représente le nombre d'éléments.
+    //
+    // Pour connaître la taille du tableau  args on utilisera args.length
+    //
+    // Supposons que notre tableau contienne les 3 String suivantes: "maison" "porte" "fenêtre".
+    // On accédera aux différentes String de notre tableau de cette manière à l'aide de crochets et d'un entier:
+    // args[0]   on accède à la chaîne stockée à l'indice 0 du tableau: "maison" Un tableau commence toujours à l'indice 0.
+    // args[1]   on accède à la chaîne stockée à l'indice 1 du tableau: "porte"
+    // args[2]   on accède à la chaîne stockée à l'indice 2 du tableau: "fenêtre"
+    // args[3]   on essaie d'accèder à la chaîne stockée à l'indice  du tableau: Cela va provoquer une erreur car notre tableau ne contient que 3 élèments.
+
     public static void main(String[] args) {
         // On vérifie qu'on le tableau a bien reçu des paramètres: c'est à dire est-ce
         // que notre tableau à plus que zéro élément ?
@@ -63,6 +75,7 @@ public class Demo {
             }
         } else {
             // l'utilisation de .err à la place de .out permet au serveur web de savoir qu'il y a une erreur à afficher.
+            // Cette ligne n'est pas nécessaire car le serveur web vérifie aussi si une fonction a été envoyée.
             System.err.println("Vous devez fournir au moins un paramètre, c'est à dire le nom d'une fonction !");
         }
     }
